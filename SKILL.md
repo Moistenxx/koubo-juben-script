@@ -1,6 +1,6 @@
 ---
 name: koubo-juben-script
-description: Use when a creator needs a Chinese voiceover-only script for a short tutorial that starts with a brief on-camera hook and then teaches a real workflow from opening an agent and Skill to producing a finished result, using the narrative rhythm extracted from the 科技米线(Ai 版) reference videos.
+description: Use when a creator needs a Chinese voiceover-only script for a Skill tutorial that opens with the audience's real pain point, previews a concrete result, and then teaches the workflow from opening an agent and Skill to producing the finished result, using the narrative rhythm extracted from the 科技米线(Ai 版) reference videos.
 metadata:
   display-name: 口播剧本 Skill
   short-description: 先做深度调研，再按科技米线式探索叙事生成可直接录音的口播稿
@@ -34,19 +34,20 @@ metadata:
 
 主链必须保持：
 
-`真人先给结果/强反应 → 点明今天要做的东西 → 打开智能体 → 打开本 Skill → 输入主题和约束 → 等待 Deep Research → 按案例逻辑生成初稿 → 修改成最终口播 → 展示结果和一个限制`
+`先说观众真实痛点 → 给出成品片段/结果预览 → 说明今天要验证什么 → 打开智能体 → 打开本 Skill → 输入主题和约束 → 等待 Deep Research → 按案例逻辑生成初稿 → 修改成最终口播 → 回扣痛点并展示限制`
 
 每个教学段落遵循：`即时反应 → 我刚刚做了什么 → 这一步得到什么 → 下一步为什么继续`。
 
 写稿时按以下顺序推进：
 
-1. **真人开场**：前几秒只说结果、冲突和主题，例如“今天我用这个 Skill，从零做一条关于 X 的口播稿”。不讲 AI 原理，不做长背景。
-2. **任务转换**：说清“我要做什么、为什么用这套流程、最后要拿到什么成品”。
-3. **打开入口**：口播跟随录屏说“先打开智能体，再打开口播剧本 Skill”，交代这不是凭空展示，而是一次可复刻操作。
-4. **输入任务**：说清主题、受众、平台、时长、语气和已有素材怎样进入对话；缺少的信息必须标为待补。
-5. **研究到初稿**：只解释研究如何为稿子提供事实和来源，不讲模型原理；口播必须说出“先调研，再写稿”的因果。
-6. **按案例打磨**：让初稿沿“结果/反应→任务→路线→动作证据→个人连接→限制→细节收束”推进，并明确哪些句子被删改以及为什么。
-7. **成稿验证**：展示最终口播稿，说明它是否能贴着录屏讲清步骤；没有真实运行结果时写“待补/待验证”，不制造成功或失败。
+1. **痛点开场**：第一句必须是目标观众正在经历的具体失败或损失，例如“让 AI 写口播，拿到的像资料汇报，信息都对但没人想听”。不要先说 Skill 名称、模型名称或“今天教大家”。痛点必须和本次 Skill 能解决的结果直接相关。
+2. **结果预览**：痛点后立刻给一小段真实成品、修改前后对比或可观察结果，让观众知道后面值得看。没有真实成品时使用 `[成品片段待补]`，不能把预期写成已完成。
+3. **任务转换**：说清“我要做什么、为什么用这套流程、最后要拿到什么成品”，再进入录屏。这里可以用“今天我从零跑一遍”承接痛点和结果。
+4. **打开入口**：口播跟随录屏说“先打开智能体，再打开口播剧本 Skill”，交代这不是凭空展示，而是一次可复刻操作。
+5. **输入任务**：说清主题、受众、平台、时长、语气和已有素材怎样进入对话；缺少的信息必须标为待补。
+6. **研究到初稿**：只解释研究如何为稿子提供事实和来源，不讲模型原理；口播必须说出“先调研，再写稿”的因果。
+7. **按案例打磨**：让初稿沿“结果/反应→任务→路线→动作证据→个人连接→限制→细节收束”推进，并明确哪些句子被删改以及为什么。
+8. **成稿验证**：展示最终口播稿，回扣开头痛点，说明它是否真的解决了“信息正确但没人想听/故事讲不清”等问题；没有真实运行结果时写“待补/待验证”，不制造成功或失败。
 
 不要把稿子写成“AI 原理介绍 → 功能列表 → 总结”。不要把教学步骤压成一句“然后生成”，也不要强行加入不存在的失败、数字或彩蛋；每一步必须能在录屏中找到对应动作。
 
@@ -74,7 +75,10 @@ metadata:
 ```text
 【口播稿｜约 X 秒】
 
-[真人开场｜前 X 秒]
+[真实痛点｜前 X 秒]
+……
+
+[成品片段/结果预览]
 ……
 
 [切入录屏｜说明今天要完成什么]
